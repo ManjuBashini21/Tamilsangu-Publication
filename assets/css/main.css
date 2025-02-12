@@ -4007,8 +4007,8 @@ span {
 .hero-2 .book-image img {
   position: absolute;
   z-index: 5;
-  right: 14%;
-  bottom: 20%;
+  right: 5%;
+  bottom: 10%;
   height: 700px;
 }
 @media (max-width: 1399px) {
