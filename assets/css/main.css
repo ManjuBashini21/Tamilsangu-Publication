@@ -2245,7 +2245,7 @@ span {
     height: 89px;
   }
 }
-.header-1 .header-main:after {
+/* .header-1 .header-main:after {
   content: "";
   position: absolute;
   top: -1%;
@@ -2259,7 +2259,7 @@ span {
   -moz-border-radius: 0px 100px 0px 0px;
   -ms-border-radius: 0px 100px 0px 0px;
   -o-border-radius: 0px 100px 0px 0px;
-}
+} */
 @media (max-width: 1600px) {
   .header-1 .header-main:after {
     width: 300px;
