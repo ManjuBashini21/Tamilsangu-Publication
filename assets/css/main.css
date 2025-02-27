@@ -1616,6 +1616,13 @@ span {
   }
 }
 
+@media (max-width: 767px) { 
+  .sticky-header {
+      display: none;
+  }
+}
+
+
 .header-2-wrapper {
   padding: 30px 0;
   display: flex;
