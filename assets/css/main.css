@@ -8188,17 +8188,17 @@ span {
 
 .book-gallery {
   overflow: hidden;
-  white-space: nowrap;
   background: #fff;
   padding: 30px 0;
   position: relative;
+  white-space: nowrap;
 }
 
 .book-track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scrollBooks 20s linear infinite;
+  animation: scrollBooks 60s linear infinite;
 }
 
 .book-item {
@@ -8222,13 +8222,19 @@ span {
   color: #333;
 }
 
-/* Infinite Scrolling Animation */
+/* Actual Infinite Scrolling */
 @keyframes scrollBooks {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-/* Pause animation on hover */
+/* Duplicating content for infinite effect */
+.book-track {
+  display: flex;
+  animation: scrollBooks 15s linear infinite;
+}
+
+/* Hover effect to pause */
 .book-gallery:hover .book-track {
   animation-play-state: paused;
 }
