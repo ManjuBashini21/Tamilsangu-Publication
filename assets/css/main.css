@@ -8185,3 +8185,50 @@ span {
 .testimonial-slider .swiper-slide-active .testimonial-card-items .client-info .client-img .icon .shape {
   filter: invert(23%) sepia(96%) saturate(2210%) hue-rotate(170deg) brightness(95%) contrast(103%);
 }/*# sourceMappingURL=main.css.map */
+
+.book-gallery {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  padding: 30px 0;
+  position: relative;
+}
+
+.book-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollBooks 20s linear infinite;
+}
+
+.book-item {
+  width: 180px;
+  flex-shrink: 0;
+  padding: 15px;
+  background: #ffcc80; /* Light orange */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.book-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-item p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Infinite Scrolling Animation */
+@keyframes scrollBooks {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pause animation on hover */
+.book-gallery:hover .book-track {
+  animation-play-state: paused;
+}
