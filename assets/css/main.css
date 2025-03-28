@@ -3372,9 +3372,33 @@ span {
 .breadcrumb-wrapper {
   position: relative;
   overflow: hidden;
-  background: #E6EFF2;
   padding: 173px 0;
 }
+
+.breadcrumb-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1;
+}
+
+.breadcrumb-wrapper img{
+  height: 100%;
+}
+
 .breadcrumb-wrapper .book1 {
   position: absolute;
   bottom: 0;
@@ -3396,7 +3420,7 @@ span {
   }
 }
 .breadcrumb-wrapper .page-heading h1 {
-  color: var(--header);
+  color: #F5F3FE;
   text-align: center;
   font-size: 40px;
   font-style: normal;
@@ -3427,7 +3451,7 @@ span {
   }
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li {
-  color: var(--theme);
+  color: #F5F3FE;
   text-transform: capitalize;
   font-size: 16px;
   font-style: normal;
@@ -3436,7 +3460,7 @@ span {
   text-transform: capitalize;
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li a {
-  color: var(--header);
+  color: #F5F3FE;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -3447,7 +3471,7 @@ span {
   color: var(--theme);
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li i {
-  color: var(--header);
+  color: #F5F3FE;;
   font-size: 12px;
 }
 
@@ -8201,18 +8225,18 @@ span {
 
 .book-track {
   display: flex;
-  gap: 10px; 
+  gap: 26px; 
   width: max-content;
-  animation: scrollBooks 10s linear infinite; 
+  animation: scrollBooks 25s linear infinite; 
 }
 
 .book-item {
-  width: 200px; 
-  height: 250px; 
+  width: 300px; 
+  height: 300px; 
   flex-shrink: 0;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -8289,7 +8313,7 @@ span {
 }
 .book-thumb img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }

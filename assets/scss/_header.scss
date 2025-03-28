@@ -2219,28 +2219,10 @@
 .breadcrumb-wrapper {
     position: relative;
     overflow: hidden;
-    background: #E6EFF2;
+    background: url('assets/img/home.jpg') no-repeat center center/cover !important;
     padding: 173px 0;
 
-    .book1 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        @include breakpoint(max-xl) {
-            display: none;
-        }
-    }
-
-    .book2 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        @include breakpoint(max-xl) {
-            display: none;
-        }
-    }
+    
 
     .page-heading {
 
