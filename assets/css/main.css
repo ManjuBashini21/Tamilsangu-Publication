@@ -8338,18 +8338,15 @@ span {
   font-weight: bold;
   color: #cc0000;
 }
+.featured-books-section .swiper-pagination .swiper-pagination-bullet{
+  display: none;
+}
 
+.footer-bottom{
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
-  .top-category{
-    width: 90%;
-    margin: auto;
-  }
-
-  .banner-book-card-items{
-    width: 90%;
-    margin: auto;
-  }
 
   .hero-2 .hero-content h1 {
     font-size: 38px;
@@ -8359,11 +8356,6 @@ span {
 
   .featured-books-section{
     width: 100%;
-  }
-
-  .fav-book{
-    width: 90%;
-    margin: auto;
   }
 
   .news-card-items{
@@ -8379,5 +8371,75 @@ span {
 
   .book-gallery{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .news-card-items.style-2{
+    margin-bottom: 20px;
+  }
+  .cta-banner-section{
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-2 .hero-content h1{
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .banner-book-card-items{
+    width: 200px;
+  }
+  .banner-book-card-items .banner-book-content{
+    padding: 20px;
+  }
+  .banner-book-card-items .banner-book-content h2{
+    font-size: 22px;
+  }
+  .shop-box-items.style-3 .shop-content .book-category-badge{
+    font-size: 10px;
+    padding: 5px;
+  }
+  .shop-box-items .shop-content .shop-button .theme-btn{
+    font-size: 10px;
+  }
+  .news-card-items.style-2{
+    margin-bottom: 20px;
+  }
+  .book-gallery{
+    width: 100%;
+  }
+  .featured-books-section{
+    width: 100%;
+  }
+}
+
+@media screen and (width: 1280px){
+  .hero-2 .hero-content h1{
+    font-size: 60px;
+  }
+  .banner-book-card-items .banner-book-content h2{
+    font-size: 26px;
+  }
+  .news-card-items .news-content h3{
+    font-size: 14px;
+  }
+  .news-card-items .news-image{
+    width: 270px;
+    height: 200px;
+  }
+  .news-card-items .news-content{
+    padding: 20px;
+  }
+  .news-card-items .news-content ul li{
+    font-size: 12px;
+  }
+  .news-card-items .news-image .post-box{
+    top:30px;
+    left: 30px;
+    position: absolute;
+    padding: 10px;
+    font-size: 15px;
   }
 }
