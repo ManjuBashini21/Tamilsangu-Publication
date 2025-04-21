@@ -8288,6 +8288,7 @@ span {
   padding: 60px 20px;
   text-align: center;
   color: white;
+  overflow-x: hidden;
 }
 
 .featured-books-section h2{
@@ -8295,6 +8296,7 @@ span {
 }
 .swiper-container {
   padding: 20px 0;
+  overflow: hidden;
 }
 .swiper-slide {
   display: flex;
@@ -8302,8 +8304,9 @@ span {
 }
 .book-card {
   background: white;
-  width: 350px;
-  height: 350px;
+  width: 100%; /* Responsive width */
+  max-width: 300px; /* Limit max width */
+  height: auto; /* Let height adjust automatically */
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -8354,6 +8357,34 @@ span {
     margin-top: 10px;
   }
 
+  .contact-wrapper .contact-content h2{
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-wrapper .contact-content p{
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-wrapper .contact-content .contact-form-items{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .blog-post-details .single-blog-post .post-content p{
+    font-size: 14px;
+  }
+
+  .news-details-area .blog-post-details .single-blog-post .post-content .hilight-text p{
+    font-size: 15px;
+  }
+
+  .header-2 .header-left .logo a {
+    margin-left: -8px;
+  }
+
   .featured-books-section{
     width: 100%;
   }
@@ -8375,7 +8406,18 @@ span {
   }
 
   .book-gallery{
-    width: 100%;
+    width: 90%;
+  }
+
+  .shop-section{
+    width: 90%;
+    margin: auto;
+  }
+  .contact-info-area .contact-info-items{
+    flex-wrap: nowrap;
+  }
+  .contact-info-area .contact-info-items .content h3{
+    font-size: 13px;
   }
 }
 
@@ -8427,6 +8469,10 @@ span {
   .banner-book-card-items .banner-book-content h2{
     font-size: 26px;
   }
+  .banner-book-card-items .banner-book-content h6 {
+    font-size: 16px !important;
+  }
+
   .news-card-items .news-content h3{
     font-size: 14px;
   }
@@ -8446,5 +8492,53 @@ span {
     position: absolute;
     padding: 10px;
     font-size: 15px;
+  }
+  .header-2 .header-left{
+    gap: 8px !important;
+  }
+  .header-1 .header-left{
+    gap: 8px !important;
+  }
+  .section-title h2{
+    line-height: 46.3px !important;
+  }
+}
+
+@media screen and (width: 1024px){
+  .news-card-items .news-image img{
+    width: 299px !important;
+    height: 200px;
+  }
+  .book-image img{
+    display: block !important;
+    position: absolute;
+    z-index: 5;
+    right: -3% !important;
+    bottom: 13% !important;
+    height: 577px !important;
+  }
+}
+
+@media screen and (width: 344px){
+  .logo a img{
+    width: 260px;
+  }
+}
+
+@media screen and (width: 360px){
+  .logo a img{
+    width: 260px;
+  }
+}
+
+@media screen and (width: 375px){
+  .logo a img{
+    width: 260px;
+  }
+}
+
+@media screen and (width: 540px){
+  .header-2 .header-left .logo a {
+    margin-left: 7px;
   }
 }
