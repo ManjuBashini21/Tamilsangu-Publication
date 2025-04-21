@@ -8419,6 +8419,13 @@ span {
   .contact-info-area .contact-info-items .content h3{
     font-size: 13px;
   }
+
+  .contact-wrapper .contact-left-items .contact-info-area-2 .contact-info-items .content h3{
+    font-size: 13px !important;
+  }
+  .contact-wrapper .contact-left-items .contact-info-area-2 .contact-info-items{
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -8502,6 +8509,9 @@ span {
   .section-title h2{
     line-height: 46.3px !important;
   }
+  .contact-wrapper .contact-left-items .contact-info-area-2 .contact-info-items .content h3{
+    font-size: 13px;
+  }
 }
 
 @media screen and (width: 1024px){
@@ -8537,8 +8547,27 @@ span {
   }
 }
 
+@media screen and (width: 344px){
+  .header-top-logo a img{
+    width: 240px !important;
+  }
+  .book-gallery{
+    width: 100%;
+  }
+  .contact-wrapper .contact-left-items .contact-info-area-2 .contact-info-items .content h3{
+    font-size: 15px;
+  }
+  
+}
+
 @media screen and (width: 540px){
   .header-2 .header-left .logo a {
     margin-left: 7px;
+  }
+}
+
+@media screen and (width:1024px) {
+  .contact-wrapper .contact-left-items .contact-info-area-2 .contact-info-items .content h3{
+    font-size: 13px;
   }
 }
