@@ -8358,6 +8358,11 @@ span {
     width: 100%;
   }
 
+  .banner-book-card-items{
+    width:100%;
+    margin: auto;
+  }
+
   .news-card-items{
     margin-bottom: 20px;
   }
