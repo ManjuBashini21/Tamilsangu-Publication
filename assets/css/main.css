@@ -7910,7 +7910,9 @@ span {
       opacity: 1;
   }
 }
-
+.featured-books-section{
+  margin-bottom: 20px;
+}
 .featured-books-section .swiper {
   overflow: visible !important;
   transition: all 0.5s;
